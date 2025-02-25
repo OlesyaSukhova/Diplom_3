@@ -48,8 +48,6 @@ class BasePage:
 
     @allure.step('Сравнить урл')
     def is_current_url(self, url):
-        #TODO
-        time.sleep(1)
         return self.driver.current_url == url
 
     @allure.step('Добавить ингридиент в корзину')

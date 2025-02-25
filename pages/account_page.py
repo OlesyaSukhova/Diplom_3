@@ -24,7 +24,6 @@ class AccountPage(BasePage):
     @allure.step('Дождаться скрытия оверлеев')
     def wait_for_overlay_to_hide(self):
         self.wait_for_element_hide(AccountPageLocators.OVERLAY_1)
-        time.sleep(1) ## ff@mac
 
     @allure.step('Залогиниться')
     def log_in(self, credentials):

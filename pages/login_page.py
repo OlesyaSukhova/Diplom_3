@@ -19,7 +19,6 @@ class LoginPage(BasePage):
     @allure.step('Дождаться скрытия оверлеев')
     def wait_for_overlay_to_hide(self):
         self.wait_for_element_hide(LoginPageLocators.OVERLAY_1)
-        time.sleep(1)  ## ff@mac
 
     @allure.step('Кликнуть по полю Email')
     def click_on_email_field(self):
